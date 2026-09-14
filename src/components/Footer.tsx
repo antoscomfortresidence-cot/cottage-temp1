@@ -93,10 +93,10 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Navigation Links */}
           <div className="space-y-4">
-            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide">
+            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide -translate-x-2">
               Navigation
             </h4>
-            <ul className="space-y-2.5 text-lg font-semibold text-white/80 font-light">
+            <ul className="space-y-2.5 text-lg font-semibold text-white/80 font-light -translate-x-2">
               <li>
                 <Link to="/" onClick={handleHomeClick} className="hover:text-white transition-colors">Home</Link>
               </li>
@@ -114,10 +114,10 @@ export const Footer: React.FC = () => {
 
           {/* Column 3: Bedroom Types */}
           <div className="space-y-4">
-            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide">
+            <h4 className="font-serif text-2xl font-semibold text-[#C89D66] tracking-wide -translate-x-2">
               Accommodations
             </h4>
-            <ul className="space-y-2.5 text-lg font-semibold text-white/85 font-light">
+            <ul className="space-y-2.5 text-lg font-semibold text-white/85 font-light -translate-x-2">
               <li>
                 <Link
                   to="/#accommodations"
@@ -152,10 +152,10 @@ export const Footer: React.FC = () => {
 
           {/* Column 4: Contact & Location */}
           <div className="space-y-4">
-            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide">
+            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide -translate-x-2">
               Reach Out
             </h4>
-            <div className="space-y-3 text-lg font-semibold text-white/85 font-light">
+            <div className="space-y-4 text-sm font-semibold text-white/85 font-light -translate-x-3">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#C89D66] flex-shrink-0 mt-0.5" />
                 <span>{SITE_CONFIG.location.address}</span>
