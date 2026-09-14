@@ -63,10 +63,10 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <div className="flex items-baseline gap-1.5 leading-none">
-                  <span className="font-serif text-2xl font-semibold tracking-tight text-white">
+                  <span className="font-serif text-3xl font-semibold tracking-tight text-white">
                     Anto's Comfort
                   </span>
-                  <span className="font-serif italic text-2xl font-semibold text-[#C89D66]">
+                  <span className="font-serif italic text-3xl font-semibold text-[#C89D66]">
                     Residence
                   </span>
                 </div>
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
               </div>
             </Link>
 
-            <p className="text-sm font-sans text-white/75 font-light leading-relaxed max-w-md">
+            <p className="text-sm font-semibold text-white/75 font-light leading-relaxed max-w-md">
               Enjoy a peaceful stay in Kodaikanal with comfortable rooms, beautiful surroundings, and a welcoming atmosphere.
             </p>
 
@@ -93,10 +93,10 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Navigation Links */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold text-[#C89D66] tracking-wide">
+            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide">
               Navigation
             </h4>
-            <ul className="space-y-2.5 text-sm font-sans text-white/80 font-light">
+            <ul className="space-y-2.5 text-lg font-semibold text-white/80 font-light">
               <li>
                 <Link to="/" onClick={handleHomeClick} className="hover:text-white transition-colors">Home</Link>
               </li>
@@ -114,10 +114,10 @@ export const Footer: React.FC = () => {
 
           {/* Column 3: Bedroom Types */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold text-[#C89D66] tracking-wide">
+            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide">
               Accommodations
             </h4>
-            <ul className="space-y-2.5 text-xs font-sans text-white/75 font-light">
+            <ul className="space-y-2.5 text-lg font-semibold text-white/85 font-light">
               <li>
                 <Link
                   to="/#accommodations"
@@ -152,10 +152,10 @@ export const Footer: React.FC = () => {
 
           {/* Column 4: Contact & Location */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold text-[#C89D66] tracking-wide">
+            <h4 className="font-serif text-3xl font-semibold text-[#C89D66] tracking-wide">
               Reach Out
             </h4>
-            <div className="space-y-3 text-xs font-sans text-white/80 font-light">
+            <div className="space-y-3 text-lg font-semibold text-white/85 font-light">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#C89D66] flex-shrink-0 mt-0.5" />
                 <span>{SITE_CONFIG.location.address}</span>

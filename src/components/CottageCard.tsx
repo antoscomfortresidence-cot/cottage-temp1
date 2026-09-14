@@ -1,6 +1,21 @@
 import React from 'react';
 import { Users, BedDouble, Maximize2, Sparkles, ShieldCheck } from 'lucide-react';
-import type { Cottage } from '../data/cottages';
+
+export interface Cottage {
+  id: string;
+  name: string;
+  shortName: string;
+  category: string;
+  capacity: number;
+  areaSqFt: number;
+  priceNight?: string;
+  tagline: string;
+  bedType: string;
+  view: string;
+  amenities: string[];
+  images: { url: string }[];
+}
+
 import WhatsAppButton from './WhatsAppButton';
 
 interface CottageCardProps {
@@ -86,7 +101,7 @@ export const CottageCard: React.FC<CottageCardProps> = ({ cottage, index = 0 }) 
 
           {/* Top Amenities Badges */}
           <div className="mt-4 flex flex-wrap gap-1.5">
-            {cottage.amenities.slice(0, 3).map((amenity, i) => (
+            {cottage.amenities.slice(0, 3).map((amenity: string, i: number) => (
               <span
                 key={i}
                 className="px-2.5 py-1 bg-white text-[#15291E] border border-[#EAE2D5] rounded-md text-[11px] font-medium inline-flex items-center gap-1"

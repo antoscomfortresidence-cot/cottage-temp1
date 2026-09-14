@@ -1,7 +1,6 @@
 import React from 'react';
-import { Compass, Heart, Shield, Trees, Sparkles } from 'lucide-react';
+import { Compass, Heart, Shield, Trees } from 'lucide-react';
 import WhatsAppButton from '../components/WhatsAppButton';
-import { REVIEWS } from '../data/reviews';
 import cottaBack from "../assets/images/cota-backs2.webp";
 
 export const About: React.FC = () => {
@@ -70,44 +69,6 @@ export const About: React.FC = () => {
             <p className="text-sm text-[#000000] font-semibold font-light leading-relaxed">
               Rainwater harvesting, solar water heating, zero single-use plastics, and organic waste composting on property grounds.
             </p>
-          </div>
-        </div>
-
-        {/* Reviews & Testimonials Section */}
-        <div className="bg-[#15291E] text-[#FAF7F2] p-8 sm:p-12 rounded-3xl space-y-12 shadow-md">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-mono uppercase tracking-widest text-[#C89D66]">
-              Guest Experiences
-            </span>
-            <h2 className="font-serif text-3xl sm:text-5xl font-normal text-white">
-              Loved by Nature Seekers
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {REVIEWS.map((rev) => (
-              <div key={rev.id} className="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10 space-y-6">
-                <div className="flex items-center gap-1 text-[#C89D66]">
-                  {[...Array(rev.rating)].map((_, i) => (
-                    <Sparkles key={i} className="w-4 h-4 fill-[#C89D66]" />
-                  ))}
-                </div>
-                <p className="text-sm font-serif italic text-white/90 leading-relaxed">
-                  "{rev.comment}"
-                </p>
-                <div className="pt-4 border-t border-white/10 flex items-center gap-3">
-                  <img
-                    src={rev.avatar}
-                    alt={rev.author}
-                    className="w-10 h-10 rounded-full object-cover border border-[#C89D66]"
-                  />
-                  <div>
-                    <h4 className="text-xs font-semibold text-white">{rev.author}</h4>
-                    <span className="text-[11px] text-[#C89D66] block">{rev.roomBooked}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
