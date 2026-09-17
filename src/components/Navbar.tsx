@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Compass, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,13 +76,6 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-2 sm:gap-3 group focus:outline-none flex-shrink min-w-0"
             aria-label="Anto's Comfort Residence Home"
           >
-            <div className={`p-1.5 sm:p-2 rounded-full transition-transform duration-300 group-hover:scale-105 flex-shrink-0 ${
-              isDarkStyle
-                ? 'bg-[#64395f] text-[#FAF7F2]'
-                : 'bg-white/10 text-white backdrop-blur-sm border border-white/20'
-            }`}>
-              <Compass className="w-4 h-4 sm:w-5 sm:h-5 stroke-[1.75]" />
-            </div>
             <div className="flex flex-col min-w-0 justify-center">
               {/* Mobile Wordmark Layout (< sm): ANTO'S / COMFORT stacked on left, Residence to the right */}
               <div className="flex sm:hidden items-start gap-2 leading-none">
