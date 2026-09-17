@@ -73,7 +73,7 @@ export const Navbar: React.FC = () => {
           {/* Brand Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 sm:gap-3 group focus:outline-none flex-shrink min-w-0"
+            className="flex items-center gap-2 sm:gap-3 group focus:outline-none flex-1 min-w-0 pr-2"
             aria-label="Anto's Comfort Residence Home"
           >
             <div className={`p-1.5 sm:p-2 rounded-full transition-transform duration-300 group-hover:scale-105 flex-shrink-0 ${
@@ -84,38 +84,36 @@ export const Navbar: React.FC = () => {
               <Compass className="w-4 h-4 sm:w-5 sm:h-5 stroke-[1.75]" />
             </div>
             <div className="flex flex-col min-w-0 justify-center">
-              {/* Mobile Wordmark Layout (< sm): ANTO'S / COMFORT stacked on left, Residence to the right */}
-              <div className="flex sm:hidden items-start gap-2 leading-none">
-                <div
-                  className={`font-mermaid text-[25px] lg:text-base font-bold flex flex-col leading-tight tracking-tight min-w-0 ${
-                    isDarkStyle
-                      ? 'text-[#6caca0]'
-                      : 'text-[#6caca0] drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)]'
-                  }`}
-                >
-                  <span>ANTO'S</span>
+              {/* Mobile Wordmark Layout (< sm): Flexible single line with overflow protection */}
+              <div className="flex sm:hidden flex-col justify-center min-w-0 leading-none">
+                <div className="flex items-baseline gap-1 xs:gap-1.5 min-w-0">
+                  <span
+                    className={`font-mermaid text-sm xs:text-base font-bold tracking-tight truncate ${
+                      isDarkStyle
+                        ? 'text-[#6caca0]'
+                        : 'text-[#6caca0] drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)]'
+                    }`}
+                  >
+                    ANTO'S COMFORT
+                  </span>
+                  <span
+                    className={`font-mermaid italic text-xs xs:text-sm font-bold flex-shrink-0 ${
+                      isDarkStyle
+                        ? 'text-[#c075b7]'
+                        : 'text-[#c075b7] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]'
+                    }`}
+                  >
+                    RESIDENCE
+                  </span>
                 </div>
 
-                <div
-                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-4 ${
-                    isDarkStyle
-                      ? 'text-[#6caca0]'
-                      : 'text-[#6caca0] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]'
+                <span
+                  className={`text-[8px] xs:text-[9.5px] tracking-[0.15em] uppercase font-sans mt-0.5 font-medium truncate ${
+                    isDarkStyle ? 'text-[#000000]' : 'text-white/85'
                   }`}
                 >
-                  <span>COMFORT</span>
-                </div>
-
-                <div
-                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-6 ${
-                    isDarkStyle
-                      ? 'text-[#c075b7]'
-                      : 'text-[#c075b7] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]'
-                  }`}
-                >
-                  <span>RESIDENCE</span>
-                </div>
-
+                  Cottage & Nature Stay
+                </span>
               </div>
 
               {/* Desktop / Tablet Wordmark Layout (>= sm): Horizontal baseline */}
@@ -141,9 +139,9 @@ export const Navbar: React.FC = () => {
                 </span>
               </div>
 
-              {/* Subtitle */}
+              {/* Desktop Subtitle */}
               <span
-                className={`text-[10px] xs:text-[15px] sm:text-[12px] tracking-[0.18em] uppercase font-sans mt-1 font-medium truncate ${
+                className={`hidden sm:block text-[10px] xs:text-[15px] sm:text-[12px] tracking-[0.18em] uppercase font-sans mt-1 font-medium truncate ${
                   isDarkStyle
                     ? 'text-[#000000]'
                     : 'text-white/85'
