@@ -97,7 +97,7 @@ export const Navbar: React.FC = () => {
                 </div>
 
                 <div
-                  className={`font-serif italic text-[24px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-3 ${
+                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-10 ${
                     isDarkStyle
                       ? 'text-[#6caca0]'
                       : 'text-[#6caca0] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]'
@@ -107,7 +107,7 @@ export const Navbar: React.FC = () => {
                 </div>
 
                 <div
-                  className={`font-serif italic text-[24px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-3.5 ${
+                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-10 ${
                     isDarkStyle
                       ? 'text-[#c075b7]'
                       : 'text-[#c075b7] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]'
