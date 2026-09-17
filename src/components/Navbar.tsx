@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
               {/* Mobile Wordmark Layout (< sm): ANTO'S / COMFORT stacked on left, Residence to the right */}
               <div className="flex sm:hidden items-start gap-2 leading-none">
                 <div
-                  className={`font-mermaid text-[25px] lg:text-base font-bold flex flex-col leading-tight tracking-tight min-w-0 ${
+                  className={`font-mermaid text-[25px] lg:text-base font-bold flex flex-col leading-tight tracking-tight min-w-0 translate-x-4 ${
                     isDarkStyle
                       ? 'text-[#6caca0]'
                       : 'text-[#6caca0] drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)]'
@@ -90,7 +90,7 @@ export const Navbar: React.FC = () => {
                 </div>
 
                 <div
-                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-4 ${
+                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-15 ${
                     isDarkStyle
                       ? 'text-[#6caca0]'
                       : 'text-[#6caca0] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]'
@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
                 </div>
 
                 <div
-                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-6 ${
+                  className={`font-serif italic text-[20px] lg:text-[16px] font-bold flex-shrink-0 mt-8.5 -translate-x-15 ${
                     isDarkStyle
                       ? 'text-[#c075b7]'
                       : 'text-[#c075b7] drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]'
