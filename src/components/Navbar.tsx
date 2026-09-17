@@ -136,7 +136,7 @@ export const Navbar: React.FC = () => {
 
               {/* Subtitle */}
               <span
-                className={`text-[10px] xs:text-[15px] sm:text-[12px] tracking-[0.18em] uppercase font-sans mt-1 font-medium truncate ${
+                className={`text-[10px] xs:text-[15px] sm:text-[12px] tracking-[0.18em] uppercase font-sans mt-1 font-medium truncate translate-x-5 ${
                   isDarkStyle
                     ? 'text-[#000000]'
                     : 'text-white/85'
