@@ -28,7 +28,7 @@ export const GALLERY_CATEGORIES = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-01",
-    title: "Pine Valley Sunset",
+    title: "Kodaikanal Valley Sunset",
     category: "Exterior",
     url: cotaHall,
     caption: "Golden hour glow across the main cottage property",
@@ -36,10 +36,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-02",
-    title: "Fireplace Living Nook",
+    title: "Cottage Living Space",
     category: "Interiors",
     url: cotaFront,
-    caption: "Warm evening fireside atmosphere in Room 01",
+    caption: "Warm cozy atmosphere in the cottage living area",
     aspectRatio: "vertical"
   },
   {
@@ -52,10 +52,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-04",
-    title: "Cloud Peak Glass Suite",
+    title: "Cottage Hill View Room",
     category: "Rooms",
     url: cotaBal,
-    caption: "Floor-to-ceiling glass wall inside Room 07",
+    caption: "Scenic view from the room window",
     aspectRatio: "vertical"
   },
   {
@@ -68,10 +68,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-06",
-    title: "Farm-to-Table Breakfast Spread",
-    category: "Food",
+    title: "Cottage Bedroom View",
+    category: "Rooms",
     url: cotaRoom2,
-    caption: "Freshly brewed filter coffee, warm pastries, and seasonal fruits",
+    caption: "Comfortable and spacious bedroom layout",
     aspectRatio: "square"
   },
 ];

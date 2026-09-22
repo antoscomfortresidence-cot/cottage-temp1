@@ -124,7 +124,7 @@ export const Footer: React.FC = () => {
                   onClick={(e) => handleSectionClick(e, 'accommodations')}
                   className="hover:text-[#C89D66] transition-colors flex items-center justify-between"
                 >
-                  <span>Single Bedroom</span>
+                  <span>Deluxe Room</span>
                   <ArrowUpRight className="w-3 h-3 opacity-50 flex-shrink-0 ml-1" />
                 </Link>
               </li>
@@ -134,7 +134,7 @@ export const Footer: React.FC = () => {
                   onClick={(e) => handleSectionClick(e, 'accommodations')}
                   className="hover:text-[#C89D66] transition-colors flex items-center justify-between"
                 >
-                  <span>Double Bedroom</span>
+                  <span>Standard Room</span>
                   <ArrowUpRight className="w-3 h-3 opacity-50 flex-shrink-0 ml-1" />
                 </Link>
               </li>

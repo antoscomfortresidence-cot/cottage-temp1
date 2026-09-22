@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Send, MessageCircle, CheckCircle2, Sun, CloudRain,
 import { SITE_CONFIG } from '../config/site';
 import WhatsAppButton from '../components/WhatsAppButton';
 import LocationMap from '../components/LocationMap';
+import SEO from '../components/SEO';
 import { generateWhatsAppLink } from '../utils/whatsapp';
 
 export const Contact: React.FC = () => {
@@ -70,6 +71,11 @@ Thank you.`;
 
   return (
     <div className="pt-24 sm:pt-28 pb-20 bg-[#FAF7F2] min-h-screen">
+      <SEO
+        title="Contact & Directions"
+        description="Contact Anto's Comfort Residence in Kodaikanal for room reservations, location directions, and stay enquiries."
+        canonicalPath="/contact"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
         
         {/* Header */}
@@ -230,8 +236,8 @@ Thank you.`;
                       className="w-full px-4 py-3 bg-[#FAF7F2] border border-[#EAE2D5] rounded-xl text-xs text-[#1C201D] focus:outline-none focus:border-[#15291E]"
                     >
                       <option value="Any Bedroom">Any Bedroom (Recommend me)</option>
-                      <option value="Single Bedroom">Single Bedroom</option>
-                      <option value="Double Bedroom">Double Bedroom</option>
+                      <option value="Deluxe Room">Deluxe Room</option>
+                      <option value="Standard Room">Standard Room</option>
                     </select>
                   </div>
                 </div>
@@ -288,7 +294,7 @@ Thank you.`;
             </p>
             <div className="pt-2">
               <WhatsAppButton
-                customMessage="Hello, I would like to enquire about transport pick-up assistance for my trip to Kodai Haven."
+                customMessage="Hello, I would like to enquire about transport pick-up assistance for my trip to Anto's Comfort Residence."
                 label="Enquire for Taxi Transfer"
                 size="lg"
                 variant="outline"

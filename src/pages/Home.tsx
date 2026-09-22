@@ -5,6 +5,7 @@ import HeroSlider from '../components/HeroSlider';
 import BedroomCard from '../components/BedroomCard';
 import LocationMap from '../components/LocationMap';
 import WhatsAppButton from '../components/WhatsAppButton';
+import SEO from '../components/SEO';
 import { BEDROOM_CATEGORIES } from '../data/bedrooms';
 import { EXPERIENCES } from '../data/experiences';
 import { GALLERY_ITEMS } from '../data/gallery';
@@ -20,6 +21,7 @@ export const Home: React.FC = () => {
 
   return (
     <div className="w-full bg-[#FAF7F2] overflow-x-hidden">
+      <SEO canonicalPath="/" />
       
       {/* 1. Cinematic Hero */}
       <HeroSlider />

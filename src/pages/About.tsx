@@ -1,11 +1,17 @@
 import React from 'react';
 import { Compass, Heart, Shield, Trees } from 'lucide-react';
 import WhatsAppButton from '../components/WhatsAppButton';
+import SEO from '../components/SEO';
 import cottaBack from "../assets/images/cota-backs2.webp";
 
 export const About: React.FC = () => {
   return (
     <div className="pt-24 sm:pt-28 pb-20 bg-[#FAF7F2] min-h-screen">
+      <SEO
+        title="About Us - Story & Philosophy"
+        description="Learn about Anto's Comfort Residence in Kodaikanal — comfortable cottages surrounded by pine trees, peaceful nature, and warm hospitality."
+        canonicalPath="/about"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
         
         {/* Header */}
@@ -32,7 +38,7 @@ export const About: React.FC = () => {
               When we first walked through this hillside parcel in Kodaikanal, we made a strict promise: not a single mature pine tree would be felled. Instead, our cottage were meticulously positioned around the natural contours of the rocks and trees.
             </p>
             <p className="text-sm sm:text-base text-[#000000] font-sans font-semibold leading-relaxed">
-              Every stone used in our hearth fireplaces was reclaimed from local river beds, and all timber panelling is sourced from sustainable cedar plantations. The result is an accommodation that feels like it has organically belonged to the mountain for decades.
+              Every room is thoughtfully designed to offer natural warmth and scenic mountain views. The result is an accommodation that feels like it has organically belonged to the mountain for decades.
             </p>
           </div>
 
@@ -59,7 +65,7 @@ export const About: React.FC = () => {
             <Heart className="w-8 h-8 text-[#C89D66]" />
             <h3 className="font-serif text-4xl font-semibold text-[#3534FB]">Warm Hospitality</h3>
             <p className="text-sm text-[#000000] font-semibold font-light leading-relaxed">
-              Our small host team is dedicated to personal service — from lighting your evening fireplace to brewing fresh filter coffee at dawn.
+              Our small host team is dedicated to personal service — assisting with stay needs, local travel tips, and warm hospitality throughout your visit.
             </p>
           </div>
 

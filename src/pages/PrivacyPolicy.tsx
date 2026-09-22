@@ -1,10 +1,16 @@
 import React from 'react';
 import { ShieldCheck, MapPin, Phone, Mail } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
+import SEO from '../components/SEO';
 
 export const PrivacyPolicy: React.FC = () => {
   return (
     <div className="pt-24 sm:pt-28 pb-20 bg-[#FAF7F2] min-h-screen">
+      <SEO
+        title="Privacy Policy"
+        description="Privacy policy and guest information handling transparency for Anto's Comfort Residence in Kodaikanal."
+        canonicalPath="/privacy-policy"
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
         
         {/* Page Header */}
